@@ -1,0 +1,13 @@
+* {
+  --text-primary: #180415;
+  --text-secondary: #fff;
+  --main-bg-color: #f1dae4;
+}
+
+.flex-items {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
