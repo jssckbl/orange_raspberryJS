@@ -2,12 +2,35 @@
   --text-primary: #180415;
   --text-secondary: #fff;
   --main-bg-color: #f1dae4;
+  --nav-scroll: #f3c4d8;
 }
 
 .flex-items {
   display: flex;
   text-align: center;
   justify-content: center;
-  text-align: center;
   height: 100%;
+}
+
+.flex-items > div {
+  padding: 40px;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: 120px;
+    padding: 20px;
+  }
+
+  .navbar a {
+    padding: 10px 10px;
+    margin: 0 3px;
+  }
+
+  .flex-items {
+    flex-direction: column;
+  }
 }

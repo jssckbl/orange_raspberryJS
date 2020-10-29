@@ -16,7 +16,7 @@
   </head>
   <body id="home">
     <header class="hero">
-      <div id="navbar" class="navbar">
+      <div id="navbar" class="navbar top">
         <h1><a href="#">JRW</a></h1>
         <nav>
           <ul class="navlist">
@@ -32,19 +32,43 @@
           Hello! My name is Jessica Woudsma.        
         </h1>
         </br>
-     <ul>
-      software developer || plant wrangler || coffee drinker 
-      </ul>
-      
-       <!-- <a href="#about" class="btn"
-          ><i class="fas fa-chevron-right">More About Jessica</i></a
-        > -->
-      </div>
-    </header>
+         <!-- Contact Section -->
+
+        <section id="contact" class="icons bg-light">
+            <div class="flex-items">
+            <a href="https://twitter.com/jecajoki">
+              <i class='fab fa-twitter fa-2x'></i>
+            </a>
+            <a href="https://github.com/jssckbl">
+              <i class="fab fa-github fa-2x"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/jessicawoudsma/">
+              <i class='fab fa-linkedin fa-2x'></i>
+            </a>
+            <a href="https://dev.to/jssckbl">
+              <i class='fab fa-dev fa-2x'></i>
+            </a>
+            <a href="#contact-form">
+              <i class='far fa-envelope fa-2x'></i>
+            </a>
+            </div>
+          </section>
+
+            <ul>
+              software developer || plant wrangler || coffee drinker 
+            </ul>
+              
+              <!-- <a href="#about" class="btn"
+                  ><i class="fas fa-chevron-right">More About Jessica</i></a
+                > -->
+        </div>
+      </header>
+
+
     <main>
       <!-- About Section -->
-      <section id="about" class="icons bg-light">
-        <div class="flex-items">
+      <section id="about" class="flex-items">
+        <div class="flex-container">
           <div>
             <i class="fas fa-certificate fa-2x"></i>
             <div>
@@ -78,6 +102,9 @@
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non
                 dolores architecto impedit, consequuntur eligendi quam error a
                 at odit sequi.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non
+                dolores architecto impedit, consequuntur eligendi quam error a
+                at odit sequi.
               </p>
             </div>
           </div>
@@ -85,39 +112,98 @@
       </section>
 
 
-      <!-- Contact Section -->
+      <!-- Contact Form -->
+      <section>
+        <!-- <div class="flex-items">
+          <form>
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" placeholder="First Name">
 
-      <section id="contact" class="icons bg-light">
-      <div class="social-links">
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" placeholder="Last Name">  
+            
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="Subject">   
+            
 
-<a href="https://twitter.com/jecajoki">
-<i class='fa fa-twitter'></i>
-      </a>
+          </form>
 
-
-      <a href="https://github.com/jssckbl">
-        <i class="fas fa-github"></i>
-
-      </a>
-
-<a href="https://www.linkedin.com/in/jessicawoudsma/">
-  <i class='fa fa-linkedin'></i>
-
-</a>
-
-<a href="https://dev.to/jssckbl">
-  <i class='fa fa-dev'></i>
-
-</a>
+        </div> -->
 
 
+        <!-- TEST EMAIL FORM START  -->
+
+        <div class="fcf-body">
+
+            <div id="fcf-form">
+            <h3 class="fcf-h3">Contact us</h3>
+        
+            <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+                
+                <div class="fcf-form-group">
+                    <label for="Name" class="fcf-label">Your name</label>
+                    <div class="fcf-input-group">
+                        <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                    </div>
+                </div>
+        
+                <div class="fcf-form-group">
+                    <label for="Email" class="fcf-label">Your email address</label>
+                    <div class="fcf-input-group">
+                        <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                    </div>
+                </div>
+        
+                <div class="fcf-form-group">
+                    <label for="Message" class="fcf-label">Your message</label>
+                    <div class="fcf-input-group">
+                        <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                    </div>
+                </div>
+
+                <div class="fcf-form-group">
+                    <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+                </div>
+        
+                <div class="fcf-credit" id="fcf-credit">
+                Simple HTML email form provided by: <a href="https://www.freecontactform.com" target="_blank">FreeContactForm.com</a>
+                </div>
+        
+            </form>
+            </div>
+        
+        </div>
+
+        <!-- TEST EMAIL FORM END -->
+        
 
 
-</div>
+
 
       </section>
 
+
+     
+
       <!-- COPIES ABOUT SOLUTIONS SECTION -->
     </main>
+
+<!-- JS for navbar on scroll -->
+
+    <script>
+      const navbar = document.getElementById('navbar');
+
+      window.onscroll = function () {
+        if (window.pageYOffset > 100 ) {
+          navbar.classList.remove('top')
+        } else {
+          navbar.classList.add('top')
+        }
+      }
+    
+    </script>
+
+
   </body>
+
 </html>
