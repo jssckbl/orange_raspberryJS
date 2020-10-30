@@ -37,10 +37,10 @@ p {
 }
 
 #about {
-  background: var(--main-bg-color);
+  background: #fff;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 #contact .flex-items {
@@ -52,19 +52,32 @@ p {
   flex-direction: row;
   align-items: center;
   height: 50vh;
-
   background-color: #a9a9a9;
 }
 
-#about .flex-container {
+#about.flex-items > article {
   background: #f4f4f4;
   border: #ccc solid 1px;
   margin: 10px;
-  margin-top: 80px;
-  padding: 10px;
+  margin-top: 20px;
+  padding: 30px;
   text-align: center;
   border-radius: 5px;
-  flex: 1;
+  align-items: stretch;
+  /* height: 50vh; */
+  /* flex: 1; */
+}
+
+#past {
+  align-self: flex-start;
+}
+
+#present {
+  align-self: flex-start;
+}
+
+#future {
+  align-self: flex-start;
 }
 
 .navlist {
