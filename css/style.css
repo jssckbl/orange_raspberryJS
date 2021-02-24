@@ -66,8 +66,8 @@ p {
 } */
 
 #about.flex-items > article {
-  background: #f4f4f4;
-  border: #d8c2be solid 1px;
+  background: var(--nav-scroll);
+  border: var(--nav-scroll) solid 1px;
   margin: 10px;
   margin: 75px 10px;
   padding: 30px;
@@ -107,6 +107,7 @@ p {
   position: fixed;
   top: 0px;
   padding: 0 30px;
+  border-bottom: var(--main-bg-color) solid 8px;
 }
 
 .navbar a {
@@ -177,7 +178,7 @@ p {
 }
 
 .icons i {
-  background-color: var(--text-secondary);
+  background-color: var(--text-primary);
   color: #333;
   padding: 1rem;
   margin: 1.2rem;
