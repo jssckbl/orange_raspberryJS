@@ -194,3 +194,10 @@ p {
 #email-address {
   margin: 100px;
 }
+
+@media (max-height: 376px) {
+  .hero .content {
+    height: 150%;
+    background: purple;
+  }
+}
