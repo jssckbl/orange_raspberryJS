@@ -191,6 +191,7 @@ p {
   color: white;
 }
 
-#email-address {
+/* #email-address.flex-items > p {
   margin: 100px;
-}
+  text-align: center;
+} */
