@@ -84,3 +84,9 @@
     flex-direction: row;
   }
 }
+
+@media (max-width: 415px) {
+  .content h1 {
+    font-size: 40px;
+  }
+}
