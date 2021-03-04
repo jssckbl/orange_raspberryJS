@@ -90,3 +90,12 @@
     font-size: 40px;
   }
 }
+
+@media (max-width: 376px) {
+  .content h1 {
+    font-size: 30px;
+  }
+  .content {
+    margin-top: 150px;
+  }
+}
