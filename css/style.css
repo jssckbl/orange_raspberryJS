@@ -83,16 +83,32 @@ p {
   /* flex: 1; */
 }
 
+#blog.flex-items > article {
+  background: var(--nav-scroll);
+  border: var(--nav-scroll) solid 1px;
+  margin: 10px;
+  margin: 75px 10px;
+  padding: 30px;
+  text-align: left;
+  border-radius: 5px;
+  align-items: stretch;
+  /* height: 50vh; */
+  /* flex: 1; */
+}
+
 #past {
   align-self: flex-start;
+  justify-content: space-around;
 }
 
 #present {
   align-self: flex-start;
+  justify-content: space-around;
 }
 
 #future {
   align-self: flex-start;
+  justify-content: space-around;
 }
 
 .navlist {
@@ -139,20 +155,6 @@ p {
   flex-direction: column;
 }
 
-#blog.flex-items > article {
-  background: #f4f4f4;
-  border: #ccc solid 1px;
-  margin: 10px;
-  margin: 75px 10px;
-  padding: 30px;
-  text-align: left;
-  border-radius: 5px;
-  align-items: stretch;
-
-  /* height: 50vh; */
-  /* flex: 1; */
-}
-
 /* Header */
 
 .hero {
@@ -178,7 +180,7 @@ p {
 
 .icons i {
   background-color: var(--text-primary);
-  color: #333;
+  color: var(--main-bg-color);
   padding: 1rem;
   margin: 1.2rem;
   border-radius: 50%;
@@ -186,10 +188,10 @@ p {
 
 /* Contact Form */
 
-.container {
+/* .container {
   background: #333;
   color: white;
-}
+} */
 
 /* #email-address.flex-items > p {
   margin: 100px;
