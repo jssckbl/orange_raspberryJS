@@ -35,7 +35,9 @@ h3 {
 
 footer {
   display: flex;
-  align-items: right;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 p {
@@ -70,18 +72,24 @@ p {
   background-color: #a9a9a9;
 } */
 
-#about.flex-items > article {
+#about > article {
   background: var(--nav-scroll);
   border: var(--nav-scroll) solid 1px;
+  flex-direction: row;
+  flex-basis: 0;
+  flex-grow: 1;
   margin: 10px;
   margin: 75px 10px;
   padding: 30px;
   text-align: center;
   border-radius: 5px;
   align-items: stretch;
-  /* height: 50vh; */
-  /* flex: 1; */
 }
+
+/* #about > fa-certificate,
+h3 {
+  text-align: center;
+} */
 
 #blog.flex-items > article {
   background: var(--nav-scroll);

@@ -32,6 +32,7 @@
 
   .flex-items {
     flex-direction: column;
+    width: 90vw;
   }
 
   #contact .flex-items {
@@ -43,6 +44,12 @@
 
     flex-direction: row;
   }
+
+  /* .about #past,
+  #present,
+  #future {
+    width: 85vw;
+  } */
 }
 
 @media (max-width: 499px) {
