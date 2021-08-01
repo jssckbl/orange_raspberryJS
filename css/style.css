@@ -50,9 +50,6 @@ footer {
 
 p {
   margin: 10px 0;
-  /* font-size: 2.5vh;
-  display: block;
-  width: 100%; */
 }
 
 .flex-container {
@@ -64,6 +61,14 @@ p {
   text-align: center;
   border-radius: 5px;
   flex-basis: content;
+}
+
+.flex-container-about {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  font-size: 1rem;
+  border-radius: 5px;
 }
 
 .flex-container > #present {
