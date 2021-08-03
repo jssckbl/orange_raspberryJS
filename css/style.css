@@ -7,7 +7,8 @@
   --text-primary: #e4e3dd;
   --text-secondary: #e4e3dd;
   --main-bg-color: #0e091a;
-  --nav-scroll: #c56a6a;
+  --nav-scroll: #6b2d59;
+  --about-bg-color: #30262e;
 }
 
 body {
@@ -124,8 +125,8 @@ p {
 } */
 
 #about > article {
-  background: var(--nav-scroll);
-  border: var(--nav-scroll) solid 1px;
+  background: var(--about-bg-color);
+  border: var(--nav-scroll) solid 3px;
   flex-direction: row;
   flex-basis: 0;
   flex-grow: 1;
